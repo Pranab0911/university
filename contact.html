@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>university website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html">
+                <img src="images/logo.png" alt=""></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hidemenu()" ></i>
+                    <ul>
+                        <li ><a href="index.html">HOME</a></li>
+                        <li ><a href="about.html">ABOUT</a></li>
+                        <li ><a href="course.html">COURSES</a></li>
+                        <li ><a href="blog.html">BLOG</a></li>
+                        <li ><a href="contact.html">CONTACTS</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showmenu()"></i>
+        </nav>
+        <h1>CONTACT US</h1>
+    </section>
+<!--CONTACT US-->
+<section class="location">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d455645.9342555032!2d80.66231883831361!3d26.848415931542473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bfd991f32b16b%3A0x93ccba8909978be7!2sLucknow%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1617218527920!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+
+</section>
+<section class="contact-us">
+    <div class="row">
+        <div class="contact-col">
+            <div>
+                <i class="fa fa-home"></i> 
+                <span>
+                    <h5>XYZ Road ,Abc building</h5>
+                    <p>lucknow ,uttar pradesh</p></span>
+                
+            </div>
+            <div>
+                <i class="fa fa-envelope-o"></i> 
+                <span>
+                    <h5>kumarpranab091@gmail.com</h5>
+                    <p>Email us</p></span>
+                
+            </div>
+            <div>
+                <i class="fa fa-phone"></i> 
+                <span>
+                    <h5>8887910020</h5>
+                    <p>Call us any ime</p></span>
+                
+            </div>
+        </div>
+        <div class="contact-col">
+            <form action="">
+                <input type="text" placeholder="Enter your Name" required>
+                <input type="email" placeholder="Enter eMAIL" required>
+                <textarea  rows="10" placeholder="message"></textarea>
+                <button type="submit" class="text-btn red-btn">Send message</button>
+
+            </form>
+        </div>
+    </div>
+</section>
+<!-- Footer-->
+<section class="footer">
+    <h4>ABout us</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptate dolores quae dolore ipsa quibusdam maxime animi quasi labore, consequatur quo possimus eius inventore eos,<br> laborum quos. Quo, ipsum ratione!</p>
+   <div class="icon">
+    <a href="http://facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
+       <a href="http://instagram.com" target="_blank"> <i class="fa fa-instagram"></i></a>
+       <a href="http://twitter.com" target="_blank"> <i class="fa fa-twitter"></i></a>
+       <a href="http://linkden.com" target="_blank"> <i class="fa fa-linkedin"></i></a>
+    
+   </div>
+   <p>Made with <i class="fa fa-heart-o"></i> by Pranab </p>
+</section>
+    <!----JAva script for toggle menu---->
+    <script>
+        var navLinks=document.getElementById("navLinks");
+        function showmenu(){
+            navLinks.style.right="0";
+        }
+        function hidemenu(){
+            navLinks.style.right="-200px";
+        }
+    </script>
+</body>
+</html>

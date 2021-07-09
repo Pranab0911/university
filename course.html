@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>university website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html">
+                <img src="images/logo.png" alt=""></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hidemenu()" ></i>
+                    <ul>
+                        <li ><a href="index.html">HOME</a></li>
+                        <li ><a href="about.html">ABOUT</a></li>
+                        <li ><a href="course.html">COURSES</a></li>
+                        <li ><a href="blog.html">BLOG</a></li>
+                        <li ><a href="contact.html">CONTACTS</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showmenu()"></i>
+        </nav>
+        <h1>COURSES</h1>
+    </section>
+<!--COURSES -->
+<section class="project">
+    <h1>OUR COURSES</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. .</p>
+    <div class="row">
+        <div class="project-col">
+            <h3>Begineer Level</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores 
+                fuga, recusandae quibusdam iste doloribus voluptatibus laborum sequi
+                 aperiam eligendi adipisci. Eveniet cumq
+                ecessitatibus aperiam praesentium laboriosam eos volupta
+                tibus deserunt.</p>
+        </div>
+        <div class="project-col">
+            <h3>Intermediate Level</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores 
+                fuga, recusandae quibusdam iste doloribus voluptatibus laborum sequi
+                 aperiam eligendi adipisci. Eveniet cumq
+                ecessitatibus aperiam praesentium laboriosam eos volupta
+                tibus deserunt.</p>
+        </div>
+        <div class="project-col">
+            <h3>Advance Level</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores 
+                fuga, recusandae quibusdam iste doloribus voluptatibus laborum sequi
+                 aperiam eligendi adipisci. Eveniet cumq
+                ecessitatibus aperiam praesentium laboriosam eos volupta
+                tibus deserunt.</p>
+        </div>
+    </div>
+</section>
+<!--------------------------------------- Fcilities---------------------->
+<section class="facilities">
+    <h1>OUR FACILITIES</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+    <div class="row">
+        <div class="faclities-col">
+            <img src="images/library.png" alt="">
+            <h3>LIBRARY</h3>
+        </div>
+    
+    
+        <div class="faclities-col">
+            <img src="images/basketball.png" alt="">
+            <h3>BASKETBALL</h3>
+        </div>
+    
+    
+        <div class="faclities-col">
+            <img src="images/cafeteria.png" alt="">
+            <h3>CAFETERIA</h3>
+        </div>
+    </div>
+</section>
+<!-- Footer-->
+<section class="footer">
+    <h4>ABout us</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptate dolores quae dolore ipsa quibusdam maxime animi quasi labore, consequatur quo possimus eius inventore eos,<br> laborum quos. Quo, ipsum ratione!</p>
+   <div class="icon">
+    <a href="http://facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
+       <a href="http://instagram.com" target="_blank"> <i class="fa fa-instagram"></i></a>
+       <a href="http://twitter.com" target="_blank"> <i class="fa fa-twitter"></i></a>
+       <a href="http://linkden.com" target="_blank"> <i class="fa fa-linkedin"></i></a>
+    
+   </div>
+   <p>Made with <i class="fa fa-heart-o"></i> by Pranab </p>
+</section>
+    <!----JAva script for toggle menu---->
+    <script>
+        var navLinks=document.getElementById("navLinks");
+        function showmenu(){
+            navLinks.style.right="0";
+        }
+        function hidemenu(){
+            navLinks.style.right="-200px";
+        }
+    </script>
+</body>
+</html>

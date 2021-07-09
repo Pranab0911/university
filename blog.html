@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>university website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html">
+                <img src="images/logo.png" alt=""></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hidemenu()" ></i>
+                    <ul>
+                        <li ><a href="index.html">HOME</a></li>
+                        <li ><a href="about.html">ABOUT</a></li>
+                        <li ><a href="course.html">COURSES</a></li>
+                        <li ><a href="blog.html">BLOG</a></li>
+                        <li ><a href="contact.html">CONTACTS</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showmenu()"></i>
+        </nav>
+        <h1>ACHIEVEMENTS</h1>
+    </section>
+<!----blog page content-->
+<section class="blog-content">
+    <div class="row">
+        <div class="blog-left">
+            <img src="images/certificate.jpg" alt="">
+            <h2>ACHIEVEMENTS</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis consequatur quaerat, soluta quos adipisci sunt repellendus aperiam nihil quas nostrum qui corrupti enim dignissimos non voluptatem sed iusto suscipit quo?</p>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur nesciunt delectus maiores vero optio atque ut facere molestiae ipsa, architecto aperiam sint officiis voluptatum eligendi dicta voluptates, culpa repellendus cum.</p>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur nesciunt delectus maiores vero optio atque ut facere molestiae ipsa, architecto aperiam sint officiis voluptatum eligendi dicta voluptates, culpa repellendus cum.</p>
+            <div class="comment-box">
+                <h3>Leave a Comment</h3>
+                <div class="comment-form">
+                    <input type="text" placeholder="Enter name">
+                    <input type="email" placeholder=" Enter E-mail">
+                   <textarea  rows="5" placeholder="your comment"></textarea>
+                   <button type="submit" class="text-btn red-btn" >Post Comment</button>
+                </div>
+            </div>
+        </div>
+        <div class="blog-right">
+            <h3>Post Categories</h3>
+            <div>
+                <span>Buisness</span>
+                <span>13</span>
+            </div>
+            <div>
+                <span>CSE</span>
+                <span>43</span>
+            </div>
+            <div>
+                <span>Graphic design</span>
+                <span>33</span>
+            </div>
+            <div>
+                <span>Arts</span>
+                <span>34</span>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Footer-->
+<section class="footer">
+    <h4>ABout us</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptate dolores quae dolore ipsa quibusdam maxime animi quasi labore, consequatur quo possimus eius inventore eos,<br> laborum quos. Quo, ipsum ratione!</p>
+   <div class="icon">
+    <a href="http://facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
+    <a href="http://instagram.com" target="_blank"> <i class="fa fa-instagram"></i></a>
+    <a href="http://twitter.com" target="_blank"> <i class="fa fa-twitter"></i></a>
+    <a href="http://linkden.com" target="_blank"> <i class="fa fa-linkedin"></i></a>
+ 
+   </div>
+   <p>Made with <i class="fa fa-heart-o"></i> by Pranab </p>
+</section>
+    <!----JAva script for toggle menu---->
+    <script>
+        var navLinks=document.getElementById("navLinks");
+        function showmenu(){
+            navLinks.style.right="0";
+        }
+        function hidemenu(){
+            navLinks.style.right="-200px";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>university website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html">
+                <img src="images/logo.png" alt=""></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hidemenu()" ></i>
+                    <ul>
+                        <li ><a href="index.html">HOME</a></li>
+                        <li ><a href="about.html">ABOUT</a></li>
+                        <li ><a href="course.html">COURSES</a></li>
+                        <li ><a href="blog.html">BLOG</a></li>
+                        <li ><a href="contact.html">CONTACTS</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showmenu()"></i>
+        </nav>
+        <h1>ABOUT US</h1>
+    </section>
+<!--about us content -->
+<section class="about-us">
+    <div class="row">
+        <div class="about-col">
+            <h1>BEST OF THE BEST</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, atque ullam vitae, reiciendis deserunt praesentium temporibus, laborum iste consectetur eveniet dolorem dolore deleniti molestias. Tempore natus voluptatum perspiciatis temporibus hic?</p>
+            <a href="" class="text-btn red-btn">Explore</a>
+        </div>
+        <div class="about-col">
+           <img src="images/about.jpg" alt="">
+        </div>
+    </div>
+</section>
+<!-- Footer-->
+<section class="footer">
+    <h4>ABout us</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptate dolores quae dolore ipsa quibusdam maxime animi quasi labore, consequatur quo possimus eius inventore eos,<br> laborum quos. Quo, ipsum ratione!</p>
+   <div class="icon">
+    <a href="http://facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
+    <a href="http://instagram.com" target="_blank"> <i class="fa fa-instagram"></i></a>
+    <a href="http://twitter.com" target="_blank"> <i class="fa fa-twitter"></i></a>
+    <a href="http://linkden.com" target="_blank"> <i class="fa fa-linkedin"></i></a>
+ 
+   </div>
+   <p>Made with <i class="fa fa-heart-o"></i> by Pranab </p>
+</section>
+    <!----JAva script for toggle menu---->
+    <script>
+        var navLinks=document.getElementById("navLinks");
+        function showmenu(){
+            navLinks.style.right="0";
+        }
+        function hidemenu(){
+            navLinks.style.right="-200px";
+        }
+    </script>
+</body>
+</html>
